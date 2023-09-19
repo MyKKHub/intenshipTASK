@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MUSCLE FACTORY FITNESS STUDIO</title>
+    <link rel="icon" href="img/weightlifting.png">
+    <style>
+        body {
+            color: white;
+        }
+         h3,  label, a {
+            color: white;
+        }
+    </style>
+</head>
+    <body background="img/pxfuel.jpg" align =center>
+        <form action="#" method="post">
+            <h3>Personal Details</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <h3>Fitness Details</h3>
+            <label for="membership">Membership Type:</label>
+            <input type="radio" id="basic" name="membership" value="basic" required>
+            <label for="basic">Basic</label>
+            <input type="radio" id="premium" name="membership" value="premium" required>
+            <label for="premium">Premium</label><br><br>
+
+            <label for="fitness-goal">Fitness Goal:</label>
+            <select id="fitness-goal" name="fitness-goal" required>
+                <option value="lose-weight">Lose Weight</option>
+                <option value="gain-muscle">Gain Muscle</option>
+                <option value="improve-fitness">Improve Fitness</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="exercise-frequency">Exercise Frequency (per week):</label>
+            <input type="number" id="exercise-frequency" name="exercise-frequency" min="1" required><br><br>
+
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" placeholder="give small information about your body type" name="comments" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        
+    
+    </body>
+</html>
