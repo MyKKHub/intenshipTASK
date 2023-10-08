@@ -879,7 +879,19 @@ section {
   border: 1px solid rgba(var(--color-black-rgb), 0.5);
 }
 
+.contact-box {
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
 
+.contact-box:hover {
+  background-color: #007bff;
+  cursor: pointer;
+}
 
 
 
