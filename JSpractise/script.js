@@ -19,7 +19,7 @@ function makeMove(row, col) {
         } else {
             currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
             if (currentPlayer === 'O' && !isGameFinished) {
-                // It's the computer's turn. You can implement a basic AI logic here.
+                
                 makeComputerMove();
             }
         }
@@ -75,7 +75,7 @@ function resetBoard() {
 }
 
 function makeComputerMove() {
-    // Implement a simple random move for the computer.
+    
     const availableCells = [];
     for (let i = 0; i < 3; i++) {
         for (let j = 0; j < 3; j++) {
@@ -91,7 +91,7 @@ function makeComputerMove() {
     }
 }
 
-// Add the event listeners to your cells
+
 cells.forEach((cell, index) => {
     cell.addEventListener('click', () => {
         const row = Math.floor(index / 3);
