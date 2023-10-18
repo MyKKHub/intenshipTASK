@@ -40,6 +40,7 @@ function validateSignInForm() {
     const storedPassword = localStorage.getItem("password");
 
     if (email === storedEmail && password === storedPassword) {
+        localStorage.setItem("isSignedIn", "true");
         alert("Sign-in successful. You will now be redirected to the main page.");
         location.href = "index.html";
         return true;
@@ -47,6 +48,7 @@ function validateSignInForm() {
         alert("Invalid email or password. Please try again .");
         return false;
     }
+    
    
 }
 
