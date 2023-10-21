@@ -1,4 +1,3 @@
-// DOM elements
 const loginSection = document.getElementById('login');
 const signupSection = document.getElementById('signup');
 const profileSection = document.getElementById('profile');
@@ -13,10 +12,10 @@ const signOutButton = document.getElementById('sign-out');
 const removeButton = document.getElementById('remove-details-button');
 
 
-// Initial state
+
 let currentUser = null;
 
-// Function to toggle sections
+
 function toggleSection(show, hide1, hide2) {
     show.classList.remove('hidden');
     show.classList.add('visible');
@@ -26,7 +25,7 @@ function toggleSection(show, hide1, hide2) {
     hide2.classList.remove('visible');
 }
 
-// Handle Sign Up and Sign In links
+
 signupLink.addEventListener('click', function () {
     toggleSection(signupSection, loginSection, profileSection);
 });
@@ -35,7 +34,7 @@ signinLink.addEventListener('click', function () {
     toggleSection(loginSection, signupSection, profileSection);
 });
 
-// Handle Sign Out
+
 signOutButton.addEventListener('click', function () {
     
     localStorage.removeItem("isSignedIn");
@@ -59,7 +58,7 @@ removeButton.addEventListener('click', function () {
 
 
 
-// Function to display user profile
+
 function displayProfile() {
     userName.textContent = currentUser.name;
     userEmail.textContent = currentUser.email;
@@ -67,14 +66,14 @@ function displayProfile() {
     toggleSection(profileSection, loginSection, signupSection);
 }
 
-// Function to clear user profile info
+
 function clearProfileInfo() {
     userName.textContent = '';
     userEmail.textContent = '';
     userPhone.textContent = '';
 }
 
-// Handle Sign Up
+
 signupForm.addEventListener('submit', function (e) {
     e.preventDefault();
     const name = document.getElementById('signup-name').value;
@@ -99,7 +98,7 @@ signupForm.addEventListener('submit', function (e) {
 
     localStorage.setItem("name", name);
     localStorage.setItem("email", email);
-    localStorage.setItem("phone", phone); // Added to store the phone number
+    localStorage.setItem("phone", phone); 
     localStorage.setItem("password", password);
 
     if (name && email && phone && password) {
@@ -112,7 +111,7 @@ signupForm.addEventListener('submit', function (e) {
     }
 });
 
-// Handle Sign In
+
 loginForm.addEventListener('submit', function (e) {
     e.preventDefault();
     const email = document.getElementById('login-email').value;
@@ -140,7 +139,7 @@ loginForm.addEventListener('submit', function (e) {
 });
 
 function isValidUsername(name) {
-    return name.length >= 3; // Fixed the variable name from 'username' to 'name'
+    return name.length >= 3; 
 }
 
 function isValidEmail(email) {

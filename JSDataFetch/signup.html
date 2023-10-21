@@ -68,21 +68,21 @@
 
     <script src="js/validate.js"></script>
     <script>
-        // Check if the user is signed in when the page loads
+        
 const isSignedIn = localStorage.getItem("isSignedIn");
 
 if (isSignedIn) {
-    // Load user data from localStorage
+    
     currentUser = {
         name: localStorage.getItem("name"),
         email: localStorage.getItem("email"),
         phone: localStorage.getItem("phone")
     };
 
-    // User is signed in, display the profile section
+    
     displayProfile();
 } else {
-            // User is not signed in, display the sign-in section
+            
             toggleSection(loginSection, signupSection, profileSection);
         }
     </script>

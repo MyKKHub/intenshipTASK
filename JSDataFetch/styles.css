@@ -34,14 +34,14 @@ h1 {
     background-color: #555;
 }
 
-/* Custom styles for the theme toggle button */
+
 #themeToggle {
     background-color: #007bff;
     color: #fff;
     border: none;
 }
 
-/* Custom styles for the header and footer */
+
 header, footer {
     background-color: #007bff;
     color: #fff;
@@ -49,7 +49,7 @@ header, footer {
     padding: 10px 0;
 }
 
-/* Custom styles for the search bar */
+
 #commentSearch {
     border: none;
     border-radius: 5px;
@@ -59,7 +59,7 @@ header, footer {
     color: #fff;
 }
 
-/* Custom styles for pagination */
+
 .pagination .page-item .page-link {
     color: #007bff;
     background-color: #444;
@@ -70,7 +70,6 @@ header, footer {
     background-color: #007bff;
     border-color: #007bff;
 }
-/*login*/
 
 .container-login {
     border-radius: 10px;

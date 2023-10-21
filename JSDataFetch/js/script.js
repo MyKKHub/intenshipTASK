@@ -1,6 +1,6 @@
-const commentsPerPage = 50;  // Number of comments per page
-const maxPages = 10;         // Maximum number of pages
-let currentPage = 1;         // Current page
+const commentsPerPage = 50; 
+const maxPages = 10;         
+let currentPage = 1;         
 let currentData = [];
 
         function displayComments() {
@@ -8,7 +8,7 @@ let currentData = [];
             const endIndex = startIndex + commentsPerPage;
 
             const commentList = document.getElementById('commentList');
-            commentList.innerHTML = ''; // Clear previous comments
+            commentList.innerHTML = ''; 
 
             for (let i = startIndex; i < endIndex && i < currentData.length; i++) {
                 const comment = currentData[i];
@@ -65,7 +65,7 @@ let currentData = [];
             createPagination();
         }
 
-        // Function to fetch and display comments
+       
         const data = [];
 
         function fetchComments() {
@@ -82,10 +82,10 @@ let currentData = [];
                 });
         }
 
-        // Call the fetchComments function to load data
+        
         fetchComments();
 
-        // Handle search input
+        
         const commentSearch = document.getElementById('commentSearch');
         commentSearch.addEventListener('input', handleSearch);
 
