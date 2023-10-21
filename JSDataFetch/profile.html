@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSONPlaceholder Comments</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">User Profile</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">SignIn</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section><h2>Your Profile</h2></section>
+    <div class="container-login d-flex justify-content-center align-items-center">
+       
+        <section id="profile" class="hidden">
+            <h2>Your Profile</h2>
+            <div id="profile-info">
+                <p><strong>Name:</strong> <span id="user-name"></span></p>
+                <p><strong>Email:</strong> <span id="user-email"></span></p>
+                <p><strong>Phone Number:</strong> <span id="user-phone"></span></p>
+            </div>
+            
+        </section>
+    
+    </div>
+
+
+    <footer class="fixed-bottom text-center text-white">
+        <p>Gmail: info321@gmail.com</p>
+        <p>Phone number: +91 9988776655</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/validate.js"></script>
+    <script src="remove.js"></script> <!-- Include the remove.js script -->
+
+
+    <script>
+        // Check if the user is signed in when the page loads
+        const isSignedIn = localStorage.getItem("isSignedIn");
+
+        if (isSignedIn) {
+            // Load user data from localStorage
+            currentUser = {
+                name: localStorage.getItem("name"),
+                email: localStorage.getItem("email"),
+                phone: localStorage.getItem("phone")
+            };
+
+            // User is signed in, display the profile section
+            displayProfile();
+        } else {
+            // User is not signed in, display the sign-in section
+            alert("Sign In First")
+            location.href="signup.html"
+        }
+
+       
+    </script>
+</body>
+</html>

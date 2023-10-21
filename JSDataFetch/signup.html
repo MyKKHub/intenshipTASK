@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSONPlaceholder Comments</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">SignIn</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profile</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-login d-flex justify-content-center align-items-center">
+        <section id="profile" class="hidden">
+            <h2>Your Profile</h2>
+            <div id="profile-info">
+                <p><strong>Name:</strong> <span id="user-name"></span></p>
+                <p><strong>Email:</strong> <span id="user-email"></span></p>
+                <p><strong>Phone Number:</strong> <span id="user-phone"></span></p>
+            </div>
+            <button id="sign-out">Sign Out</button><br><br><br>
+            <h3>Remove All Details</h3>
+            <button id="remove-details-button" >Delete All Details</button>
+        </section>
+        <section id="login" class="visible">
+            <h2 class="text-white">Sign In</h2>
+            <form id="login-form">
+                <input type="text" id="login-email" placeholder="Email">
+                <input type="password" id ="login-password" placeholder="Password">
+                <button class="btn btn-primary btn-block" id="login-button">Sign In</button>
+            </form>
+            <br>
+            <p class="text-white text-center">Don't have an account?</p>
+            <button class="btn btn-primary btn-block" id="signup-link">Sign Up</button>
+        </section>
+        <section id="signup" class="hidden">
+            <h2 class="text-white">Sign Up</h2>
+            <form id="signup-form">
+                <input type="text" id="signup-name" placeholder="Name">
+                <input type="email" id="signup-email" placeholder="Email">
+                <input type="tel" id="signup-phone" placeholder="Phone Number">
+                <input type="password" id="signup-password" placeholder="Password">
+                <button class="btn btn-primary btn-block" id="signup-button">Sign Up</button>
+            </form>
+            <br>
+             <p class="text-white text-center">Already have an account?</p>
+            <button class="btn btn-primary btn-block" id="signin-link">Sign In</button>
+        </section>
+    </div>
+
+    <footer class="fixed-bottom text-center text-white">
+        <p>Gmail: info321@gmail.com</p>
+        <p>Phone number: +91 9988776655</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/validate.js"></script>
+    <script>
+        // Check if the user is signed in when the page loads
+const isSignedIn = localStorage.getItem("isSignedIn");
+
+if (isSignedIn) {
+    // Load user data from localStorage
+    currentUser = {
+        name: localStorage.getItem("name"),
+        email: localStorage.getItem("email"),
+        phone: localStorage.getItem("phone")
+    };
+
+    // User is signed in, display the profile section
+    displayProfile();
+} else {
+            // User is not signed in, display the sign-in section
+            toggleSection(loginSection, signupSection, profileSection);
+        }
+    </script>
+    
+</body>
+</html>

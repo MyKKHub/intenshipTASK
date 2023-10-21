@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSONPlaceholder Comments</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">JSONPlaceholder</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">SignIn</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profile</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>JSONPlaceholder Comments</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <input type="text" id="commentSearch" class="form-control mb-3" placeholder="Search comments...">
+                <div class="row" id="commentList">
+
+                </div>
+                <nav>
+                    <ul class="pagination justify-content-center" id="pagination">
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>Gmail: info321@gmail.com</p>
+        <p>Phone number: +91 9988776655</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/validate.js"></script>
+    <script>
+        const isSignedIn = localStorage.getItem("isSignedIn");
+    
+        if (!isSignedIn) {
+            window.location.href = "signup.html";
+        }
+    </script>
+    
+    
+</body>
+</html>
