@@ -1,0 +1,66 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+
+  .card-body {
+    text-align: center;
+  }
+  
+
+  .row {
+    margin-bottom: 20px;
+  }
+
+  .navbar {
+    margin-bottom: 20px;
+  }
+  
+  .nav-item{
+    justify-content: flex-end; 
+  }
+
+.navbar {
+  background-color: #007bff; 
+  color: #fff; 
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #fff; 
+}
+
+.header {
+  background-color: #333; 
+  color: #fff; 
+  padding: 20px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #333; 
+  color: #fff; 
+  padding: 10px;
+  text-align: center;
+}
