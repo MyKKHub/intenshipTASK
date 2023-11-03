@@ -1,0 +1,40 @@
+/* ProductCard.css */
+.product-card {
+  background-color: #444; /* Card background color */
+  color: #fff; /* Text color */
+  border: 1px solid #555; /* Card border color */
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  width: 300px; /* Specify a fixed width for the cards, or adjust as needed */
+  height: 100%; /* Make the card cover the full height of its container */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.price {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.add-to-cart {
+  background-color: #f0f0f0; /* Add to cart button background color */
+  color: #333; /* Button text color */
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.add-to-cart:hover {
+  background-color: #ccc; /* Button background color on hover */
+}

@@ -1,0 +1,76 @@
+/* Header.css */
+.app-header {
+  background-color: #222; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 10px 0;
+  display: flex;
+  justify-content: center; /* Center-align the navigation bar horizontally */
+}
+
+.navbar {
+  background-color: transparent; /* Remove background color to see the header background */
+}
+
+/* Header.css */
+/* ... (other styles) */
+
+.navbar-brand {
+  display: flex; /* Display children in a row */
+  align-items: center; /* Align children vertically */
+  justify-content: center; /* Align text and icon horizontally */
+  color: #fff; /* White text color */
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none; /* Remove underline (line) from text */
+}
+
+.brand-text {
+  margin-right: 10px; /* Add margin between the icon and text */
+}
+
+.navbar-toggler-icon {
+  background-color: #fff; /* White background for the navbar-toggler icon */
+}
+
+.nav-link {
+  color: #fff; /* White text color */
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navbar-nav {
+  list-style: none; /* Remove bullet points from the unordered list */
+  padding: 0;
+  display: flex;
+  align-items: center; /* Align list items vertically */
+}
+
+.nav-item {
+  margin-right: 20px;
+  text-align: center; /* Center-align list items */
+}
+
+/* Style for bubble container */
+.nav-item-container {
+  background-color: #009688; /* Bubble container background color */
+  color: #fff; /* Text color inside the container */
+  border-radius: 50%; /* Create a circular shape for the container */
+  padding: 5px 10px; /* Adjust padding for the container */
+  display: inline-block; /* Make it inline-block to prevent stacking */
+}
+
+.login-button,
+.signup-button {
+  font-weight: 600;
+  margin-right: 0; /* Remove the margin for Login and Sign Up buttons */
+}
+
+/* Bubble style (same color for both) */
+.bubble {
+  background-color: #009688; /* Same color for both bubbles */
+  border-radius: 50%; /* Make it a circle */
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 5px; /* Add some space between the link text and bubble */
+}

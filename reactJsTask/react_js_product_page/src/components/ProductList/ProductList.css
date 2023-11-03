@@ -1,0 +1,10 @@
+/* ProductList.css */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%; /* Make the list span the full width of its container */
+  height: 100%; /* Make the list cover the full height of its container */
+  padding: 20px; /* Add padding as needed to space out the items */
+}
+/* Add any additional styles for the ProductList component here */

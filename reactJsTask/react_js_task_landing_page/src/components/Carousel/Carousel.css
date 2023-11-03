@@ -1,0 +1,21 @@
+/* Add this CSS to your stylesheet */
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh; /* Adjust the height as needed */
+}
+
+.carousel .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-slide-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  width: 100%;
+  height: 100px /* Set height to auto to maintain the aspect ratio */
+}

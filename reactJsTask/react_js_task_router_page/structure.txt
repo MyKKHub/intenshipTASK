@@ -1,0 +1,20 @@
+react_js_task_router_page/
+├── src/
+│   ├── components/
+│   │   ├── Header
+│   │   │   ├── Header,css
+│   │   │   ├── Header.js
+│   │   ├── ProductList
+│   │   │   ├── ProductList.css
+│   │   │   ├── ProductList.js
+│   │   ├── ProductCard
+│   │   │   ├── ProductCard.css
+│   │   │   ├── ProductCard.js
+│   ├── App.js
+│   ├── index.js
+├── public/
+│   ├── index.html
+│   ├── images/
+
+
+

@@ -1,0 +1,13 @@
+/* Footer.css */
+.footer {
+    position: fixed; /* Make the footer fixed */
+    bottom: 0; /* Position it at the bottom of the screen */
+    width: 100%; /* Full width */
+    background-color: #111; /* Dark footer background color */
+    color: #fff; /* Text color */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Add any additional styles for the footer here */
+  

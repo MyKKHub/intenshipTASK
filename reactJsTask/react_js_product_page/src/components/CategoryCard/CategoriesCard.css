@@ -1,0 +1,33 @@
+/* CategoriesCard.css */
+.categories-card {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .categories-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .categories-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .categories-card li {
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .categories-card li.active {
+    background-color: #444;
+  }
+  
+  .categories-card li:hover {
+    background-color: #444;
+  }
+  

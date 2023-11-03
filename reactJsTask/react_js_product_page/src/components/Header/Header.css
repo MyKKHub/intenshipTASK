@@ -1,0 +1,33 @@
+/* Header.css */
+header {
+  background-color: #222; /* Dark header background color */
+  padding: 10px 0;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #111 !important; /* Use !important to override Bootstrap styles */
+}
+
+.navbar-brand {
+  color: #fff; /* Navbar brand text color */
+}
+
+.nav-link {
+  color: #fff !important; /* Navbar link text color */
+  font-size: 20px; /* Increase the font size for the nav items */
+  padding: 15px 20px; /* Adjust padding to increase the size */
+  transition: color 0.3s; /* Add a smooth color transition */
+}
+
+.nav-link:hover {
+  color: #000000 !important; /* Navbar link text color on hover */
+}
+
+.navbar-toggler-icon {
+  background-color: #fff; /* Navbar toggle button color */
+}
+
+.container {
+  padding: 0 15px;
+}
