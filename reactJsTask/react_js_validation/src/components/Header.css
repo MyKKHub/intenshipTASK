@@ -1,0 +1,50 @@
+/* Nav.css */
+.header {
+    background-color: #111;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .navbar {
+    background-color: #000000;
+    padding: 10px;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fff;
+  }
+  
+  .nav-link {
+    color: #fff !important;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    transition: color 0.3s; /* Smooth hover effect for font color */
+  }
+  
+  .nav-link:hover {
+    color: #007BFF !important; /* Change font color on hover */
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #fff !important;
+    font-size: 1.25rem;
+  }
+  
+  .navbar-brand img {
+    margin-right: 0.5rem;
+  }
+  
+  /* Hide the toggler on large screens (lg and above) */
+  @media (min-width: 992px) {
+    .navbar-toggler {
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,51 @@
+/* EditItem.css */
+
+/* Container Styles */
+div {
+    background-color: #000000;
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  /* Heading Styles */
+  h2 {
+    color: #fff;
+  }
+  
+  /* Form Styles */
+  form {
+    margin-top: 1.5rem;
+  }
+  
+  /* Form Group Styles */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Label Styles */
+  label {
+    color: #fff;
+  }
+  
+  /* Input Styles */
+  .form-control {
+    background-color: #666;
+    color: #fff;
+    border: 1px solid #555;
+  }
+  
+  /* Button Styles */
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  }
+  

@@ -1,0 +1,13 @@
+/* ShopContext.css */
+
+/* Container Styles */
+div {
+  background-color: #444;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* Heading Styles */
+h2 {
+  color: #fff;
+}

@@ -1,0 +1,180 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Global Styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  /* Grid Styles */
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .grid-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .grid-item:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .overlay p {
+    font-size: 1em;
+  }
+  
+  .overlay a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  /* Section-specific Styles */
+  #about-fitness p,
+  #components-of-fitness p,
+  #common-questions ul,
+  #types-of-fitness p,
+  #health-benefits p,
+  #how-much-exercise p,
+  #eating-tips p,
+  #motivation-tips p,
+  #home-gym-equipment p {
+    text-align: justify;
+  }
+  
+  #common-questions ul li {
+    margin-bottom: 10px;
+  }
+  
+  #types-of-fitness p,
+  #how-much-exercise p {
+    margin-bottom: 20px;
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #contact form input,
+  #contact form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  #contact form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+
+  p {
+    line-height: 1.6;
+    text-align: justify;
+    white-space: pre-wrap;
+    font-family: 'Courier New', monospace;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Add some styles for different sections if needed */
+  #about-fitness p::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  #components-of-fitness p::first-letter,
+  #common-questions ul,
+  #types-of-fitness p::first-letter,
+  #health-benefits p::first-letter,
+  #how-much-exercise p::first-letter,
+  #eating-tips p::first-letter,
+  #motivation-tips p::first-letter,
+  #home-gym-equipment p::first-letter {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 5px;
+  }

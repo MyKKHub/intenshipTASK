@@ -1,0 +1,114 @@
+/* src/components/Reels/Reels.css */
+.reels-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto; 
+    padding-right: 100px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+  }
+  .custom-container{
+    margin: 100px;
+    justify-content: center;
+  }
+  .reels-video {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  .user-info {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    display: flex;
+    gap: 10px;
+    color: #fff; /* Adjust text color as needed */
+  }
+  
+  .user-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .info-text {
+    margin-top: 10px;
+    text-align: start;
+  }
+  
+  
+  .username {
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .follow__button {
+    display: inline-block;
+    margin-top: 2px;
+    padding: 5px  10px;
+    background-color: transparent; /* Transparent background */
+    color: #fff; /* Text color */
+    border: 1px solid #fff; /* Border color and width */
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .caption {
+    max-width: 80%; /* Adjust as needed */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+    margin-top: 10px;
+  }
+  
+  .reels-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .reels-footer-icons {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .icon {
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .icon-text{
+    font-size: 12px;
+  }
+  
+.music-avatar {
+    margin-top: 50px;
+    right: 5px;
+    bottom: 20px;
+    width: 30px;
+    height: 30px;
+   
+  }
+  
+.mus{
+    width: 20px;
+    height: 20px;
+}
+.music{
+    bottom: 25px;
+    margin-left: 5px;
+
+}
+
+

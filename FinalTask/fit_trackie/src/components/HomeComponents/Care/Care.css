@@ -1,0 +1,43 @@
+/* Care.css */
+
+.care-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  width: 100%;
+  max-width: 200px; /* Set a maximum width */
+  margin: 10px; /* Add some margin for spacing */
+}
+
+.care-card:hover {
+  transform: scale(1.05);
+}
+
+.care-card img {
+  width: 100%;
+  height: auto;
+}
+
+.care-card-body {
+  margin-bottom: -10%;
+}
+
+.price,
+.offer-price,
+.card-price,
+.card-offer-price {
+  font-size: 15px;
+  color: #555;
+}
+
+.card-offer-price {
+  color: #e44d26; /* Change color for offer price */
+}
+
+.price-wrapper,
+.offer-price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}

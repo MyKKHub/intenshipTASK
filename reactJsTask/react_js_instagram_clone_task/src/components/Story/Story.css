@@ -1,0 +1,95 @@
+/* src/components/css/Story.css */
+:root {
+  --gradient-one: #da3394;
+  --gradient-two: #e03c67;
+  --gradient-three: #f3753b;
+  --gradient-four: #f99b4a;
+}
+
+.post-container {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background-color: #fff;
+  width: 100%; /* Updated to cover the full width */
+  margin-top: 10%;
+  overflow: hidden;
+}
+
+.story-container {
+  width: 550px;
+  display: flex;
+  gap: 3%;
+  align-items: center;
+  overflow-x: auto;
+  flex-grow: 1;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  margin-bottom: -20px; /* Adjust the margin to hide the scrollbar */
+}
+
+.storyUser {
+  text-align: center;
+  scroll-snap-align: start;
+  width: 100%; /* Updated to cover the full width */
+}
+
+.storyUser img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  scroll-snap-stop: always;
+  border: 2px solid #fff; 
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.story-container::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar in WebKit browsers */
+}
+.storyUser p {
+  margin-top: 5px;
+  font-size: 10px;
+  
+}
+
+.button-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Ensure the buttons span the full width of the container */
+}
+.button-container button {
+  width: 48%; /* Adjust the width based on your design preferences */
+  background: transparent; /* Set the background to transparent */
+  border: none; /* Remove border */
+  color: white; /* Add text color if needed */
+}
+.storyBorder {
+  padding: 4px;
+  background: linear-gradient(
+    200deg,
+    var(--gradient-one) 25%,
+    var(--gradient-two) 50%,
+    var(--gradient-three) 75%,
+    var(--gradient-four) 100%
+  );
+  border-radius: 50%;
+}
+
+
+@media (max-width: 860px) {
+  .custom-container{
+    width: 550px;
+    margin-left: 150px;
+   
+  }
+  .storyUser img {
+    height: 50px;
+    width: 50px;
+  }
+  .storyUser p {
+    font-size: 10px;
+  }
+}

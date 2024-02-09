@@ -1,0 +1,41 @@
+/* src/components/css/Home.css */
+
+/* Adjust the overall spacing and margins */
+.App {
+  margin-top: 20px;
+}
+
+/* Style the left sidebar (Stories) */
+.col-lg-3 {
+  border-right: 1px solid #ccc;
+  padding-right: 15px;
+}
+
+/* Add some space between story components */
+.mb-4 {
+  margin-bottom: 15px;
+}
+
+/*Home.css*/
+
+/* Style the middle content (Feed) */
+.col-lg-6 {
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  padding: 0 15px;
+}
+
+/* Style the right sidebar (Suggestions) */
+.col-lg-3 {
+  padding-left: 15px;
+}
+
+/* Adjust the spacing within the feed content */
+.Feed {
+  margin-top: 15px;
+}
+
+@media (max-width: 1000px) {
+  
+  
+}

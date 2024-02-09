@@ -1,0 +1,51 @@
+/* AddItem.css */
+
+/* Container Styles */
+div {
+    background-color: #444;
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  /* Heading Styles */
+  h2 {
+    color: #fff;
+  }
+  
+  /* Form Styles */
+  form {
+    margin-top: 1.5rem;
+  }
+  
+  /* Form Group Styles */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Label Styles */
+  label {
+    color: #fff;
+  }
+  
+  /* Input Styles */
+  .form-control {
+    background-color: #666;
+    color: #fff;
+    border: 1px solid #555;
+  }
+  
+  /* Button Styles */
+  .btn-success {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+  }
+  
+  .btn-success:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+  }
+  

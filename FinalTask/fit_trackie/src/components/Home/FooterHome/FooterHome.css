@@ -1,0 +1,26 @@
+/* Custom styles for FooterHome.js */
+
+.custom-footer {
+  background-color: #343a40; /* Dark background color */
+  color: #fff; /* White text color */
+}
+
+.custom-footer-container {
+  max-width: 1200px; /* Maximum width for the content */
+  margin: 0 auto; /* Center the content */
+  text-align: center; /* Center-align the text */
+}
+
+.custom-footer-menu {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.custom-footer-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.custom-footer-menu a:hover {
+  text-decoration: underline;
+}

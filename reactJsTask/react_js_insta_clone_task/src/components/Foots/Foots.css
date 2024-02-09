@@ -1,0 +1,13 @@
+/* src/components/css/foot.css */
+.foots-hide{
+  width: 250px;
+  margin-top: 10%;
+  margin-left: 200px;
+}
+
+@media (max-width: 1200px) {
+    .foots-hide {
+      display: none;
+    }
+  }
+  

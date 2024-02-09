@@ -1,0 +1,105 @@
+/* src/css/Suggestions.css */
+.suggestions {
+  width: 150%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  overflow: hidden; /* Add overflow property to prevent text overflow */
+}
+
+.suggestions-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.suggestions__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  overflow: hidden; /* Add overflow property to prevent text overflow */
+}
+
+.suggestions__usernames {
+  display: flex;
+  flex-direction: column;
+  overflow: auto; /* Change overflow to auto to adjust the container outline based on content */
+}
+
+.suggestions__username {
+  display: flex;
+  flex-grow: 1; /* Allow the container to grow based on the content */
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the left */
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden; /* Add overflow property to prevent text overflow */
+}
+
+.follow__button {
+  font-size: 14px;
+  padding: 8px 15px;
+  margin-left: 20px; /* Add margin to the left of the follow button */
+}
+
+.username__left {
+  display: flex;
+  align-items: center;
+}
+
+.avatar img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  
+}
+
+.username__info {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Add overflow property to prevent text overflow */
+  align-items: flex-start;
+  margin-left: 15px;
+}
+
+.username {
+  font-size: 16px;
+  font-weight: bold;
+  overflow: hidden; /* Add overflow property to prevent text overflow */
+}
+
+.relation {
+  font-size: 14px;
+  color: grey;
+  overflow: hidden; /* Add overflow property to prevent text overflow */
+  white-space: nowrap; /* Ensure text stays on a single line */
+}
+
+/* Responsive Styles */
+@media (max-width: 835px) {
+  .suggestions {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .suggestions__username {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .username__left {
+    margin-bottom: 10px;
+  }
+
+  .follow__button {
+    align-self: flex-end;
+  }
+}
+
+.follow__button {
+  font-size: 14px;
+  padding: 8px 15px;
+}

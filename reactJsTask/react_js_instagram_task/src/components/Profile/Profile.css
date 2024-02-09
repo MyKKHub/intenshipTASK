@@ -1,0 +1,24 @@
+  :root {
+    --gradient-one: #da3394;
+    --gradient-two: #e03c67;
+    --gradient-three: #f3753b;
+    --gradient-four: #f99b4a;
+  }
+  .storyBorder {
+    padding: 4px;
+    background: linear-gradient(
+      200deg,
+      var(--gradient-one) 25%,
+      var(--gradient-two) 50%,
+      var(--gradient-three) 75%,
+      var(--gradient-four) 100%
+    );
+    border-radius: 50%;
+  
+  }
+  .storyIBgap{
+    padding: 2px;
+    background: #fff;
+    border-radius: 50%;
+  }
+  

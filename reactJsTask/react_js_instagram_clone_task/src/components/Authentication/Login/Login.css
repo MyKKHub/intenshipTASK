@@ -1,0 +1,166 @@
+/* Login.css */
+@font-face {
+  font-family: 'instaFont';
+  src: local('instaFont'), url('/public/font/instaFont.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+.insta-login-text{
+  font-family: 'instaFont', sans-serif;
+  font-weight: bold;
+}
+
+
+/* Container styling */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #fafafa;
+  }
+  
+  /* Instagram logo styling */
+  .instagram-logo {
+    width: 200px;
+    margin-bottom: 40px;
+  }
+  
+  /* Login form styling */
+  .login-form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #dbdbdb;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Input field styling */
+  .login-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Input focus styling */
+  .login-input:focus {
+    outline: 1px solid #dbdbdb;
+  }
+  
+  /* Login button styling */
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Additional Styles */
+  .additional-sections {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .separator-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .separator {
+    flex: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+    margin: 0 10px;
+  }
+  
+  .separator-text {
+    color: #999;
+    font-size: 14px;
+  }
+  
+  .login-facebook-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .forgot-password-link {
+    display: block;
+    font-size: 14px;
+    color: #00376b;
+    margin-top: 10px;
+    text-decoration: none;
+  }
+  
+  .signup-link-container {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #262626;
+  }
+  
+  .get-app-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .app-buttons img {
+    width: 120px;
+    margin-right: 10px;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .footer-links li {
+    font-size: 12px;
+    color: #262626;
+  }
+  
+  .language-selector {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #262626;
+  }
+  
+  .copyright {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #262626;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 400px) {
+    .login-form {
+      width: 90%;
+    }
+  }
+  

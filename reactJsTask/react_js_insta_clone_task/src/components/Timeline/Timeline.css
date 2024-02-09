@@ -1,0 +1,12 @@
+.timeline {
+  width: 500px;
+}
+
+
+
+@media (max-width: 860px) {
+  .timeline {
+    width: 400px;
+    margin-left: 50px;
+  }
+}
